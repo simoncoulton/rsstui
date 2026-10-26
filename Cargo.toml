@@ -1,0 +1,20 @@
+[package]
+name = "rsstui"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.104"
+chrono = "0.4.45"
+crossterm = "0.29"
+feed-rs = "3"
+html2md = "0.2.17"
+image = "0.25"
+open = "5.4.5"
+ratatui = { version = "0.30", features = ["unstable-rendered-line-info"] }
+ratatui-image = { version = "11.1.0", default-features = false, features = ["crossterm", "image-defaults"] }
+reqwest = { version = "0.13.5", default-features = false, features = ["blocking", "rustls", "gzip", "deflate", "brotli"] }
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.154"
+serde_yaml_ng = "0.10"
+tui-markdown = { version = "0.3.12", default-features = false }
