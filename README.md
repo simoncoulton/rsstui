@@ -2,10 +2,6 @@
 
 A terminal RSS/Atom reader with inline images, built on `ratatui`.
 
-```
-cargo run --release
-```
-
 ![rsstui demo](docs/demo.gif)
 
 <sub>The demo uses the halfblocks image fallback; kitty, iTerm2 and sixel terminals draw
@@ -14,6 +10,29 @@ real images. Re-record it with `docs/make-demo.sh` (needs [vhs](https://github.c
 The header box shows the feed (or folder) in view, with its tags and when it was
 last refreshed. Feeds can be grouped into folders and tagged, and the Feeds pane
 can be filtered by tag.
+
+## Installation
+
+### macOS (Homebrew)
+
+Homebrew on macOS (Apple Silicon and Intel) is the supported way to install, with prebuilt binaries:
+
+```sh
+brew tap simoncoulton/rsstui https://github.com/simoncoulton/rsstui
+brew install rsstui
+```
+
+### Arch Linux and other distributions
+
+There is no package for Arch or its derivatives yet. Build from source with a recent
+[Rust toolchain](https://rustup.rs) (1.90 or newer):
+
+```sh
+git clone https://github.com/simoncoulton/rsstui
+cd rsstui
+cargo install --path .       # or: cargo run --release
+```
+
 
 ## Files
 

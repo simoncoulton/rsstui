@@ -2,6 +2,10 @@
 name = "rsstui"
 version = "0.1.0"
 edition = "2024"
+description = "Terminal RSS/Atom reader with inline images"
+license = "MIT"
+repository = "https://github.com/simoncoulton/rsstui"
+rust-version = "1.90"
 
 [dependencies]
 anyhow = "1.0.104"
